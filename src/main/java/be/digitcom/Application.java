@@ -32,19 +32,16 @@ public class Application {
 		Address address1 = new Address( "12th Avenue", "12A", "4005A" );
 		Address address2 = new Address( "18th Avenue", "18B", "4007B" );
 
-		/*
 		person1.addAddress( address1 );
 		person1.addAddress( address2 );
 		person2.addAddress( address1 );
-		*/
+
 		
 		return args -> {
-			personRepository.save(person1);
-			/*
-			personRepository.save(person2);
 			addressRepository.save(address1);
-			addressRepository.save(address2);
-			*/
+			addressRepository.save(address2);			
+			personRepository.save(person1);
+			personRepository.save(person2);
 		};
 	}
 }

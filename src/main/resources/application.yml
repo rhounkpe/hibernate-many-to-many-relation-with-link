@@ -1,7 +1,7 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: 567_ovieczka
+    driver-class-name: com.mysql.jdbc.Driver
+    password: Pa$$w0rd
     url: jdbc:mysql://localhost/hibernate_manytomany_bidir?createDatabaseIfNotExist=TRUE&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
   jpa:
